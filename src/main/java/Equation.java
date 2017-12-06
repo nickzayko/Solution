@@ -11,6 +11,9 @@ public class Equation {
 
     public Equation(){}
 
+    public Equation(Plus plus) {
+    }
+
     public double getA() {
         return a;
     }
@@ -59,4 +62,5 @@ public class Equation {
 
         return solution;
     }
+
 }

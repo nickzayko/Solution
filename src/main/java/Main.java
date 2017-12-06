@@ -7,5 +7,8 @@ public class Main {
         Object myEquation = applicationContext.getBean("myEquation");
         String result = ((Equation) myEquation).solution();
         System.out.println(result);
+
+        Object newEquation = applicationContext.getBean("newEquation");
+
     }
 }

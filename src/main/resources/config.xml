@@ -3,10 +3,19 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="myEquation" class="Equation">
-    <property name="a" value="21.2"/>
-    <property name="b" value="2.1"/>
-    <property name="c" value="0"/>
-</bean>
+    <bean id="myEquation" class="Equation">
+        <property name="a" value="21.2"/>
+        <property name="b" value="2.1"/>
+        <property name="c" value="0"/>
+    </bean>
+
+    <bean id="newEquation" class="Equation">
+        <constructor-arg ref="usePlus"/>
+    </bean>
+
+    <bean id="usePlus" class="Plus">
+
+    </bean>
+
 
 </beans>
